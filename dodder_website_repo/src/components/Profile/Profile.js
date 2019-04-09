@@ -17,22 +17,40 @@ export default class Profile extends Component{
         
         return(
                 <React.Fragment >
+                    <br/> <br/> <br/>
+                <div className="row">
+                <div className="col-sm-4">
                 <Mydetails/>  
-                 <MDBContainer  className="ml-auto" >
+                </div>
+                
+              
+                <div className="col-sm-8">
+                    <div className="card">
+                        <div className="card-body">
+                        <Imageupload/><br/>
+                            {/* <p class="card-text">Here are the top resources for all things related to the Sun.</p>*/}
+                            <Basicinfo/> 
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                {/*<MDBContainer  className="ml-auto" >
                      <MDBRow >
                          <MDBCol>
                          <MDBCard className="w-responsive ml-auto p-3 mt-2" style={{ float:"right",width: "52rem",top:"-403px"}} >
                             
                             <br/><MDBCardTitle >Personal Information </MDBCardTitle> 
                             <MDBCardBody>
-                            <center><Imageupload/></center> 
+                            <Imageupload/>
+                            <br/>
                             <Basicinfo/>
                             </MDBCardBody>
                             </MDBCard> 
                          </MDBCol>
                      </MDBRow>
                      
-                 </MDBContainer>
+        </MDBContainer>*/}
  
              </React.Fragment>
 

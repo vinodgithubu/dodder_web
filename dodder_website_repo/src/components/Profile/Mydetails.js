@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from "mdbreact";
-
 import { MDBListGroup, MDBListGroupItem, MDBContainer } from "mdbreact";
 
 
@@ -12,9 +11,41 @@ export default class Mydetails extends Component{
             
                    
 <div>
+<div className="container">
     
-    <MDBCol style={{marginLeft:"22px"}}>
-      <MDBCard style={{ width: "22rem" }}>
+    <div className="card" >
+       <div className="card-body">
+            <h4 className="card-title">
+                <Link to="/myorder" style={{color:"blue"}}> My Orders</Link> 
+            </h4> 
+        </div> 
+    </div>
+
+
+    <div className="card" >
+    <div className="card-body">
+    <h4 className="card-title" style={{color:"blue"}}>Account Information</h4>    
+     <MDBListGroup>
+        
+        <MDBListGroupItem href="profile" hover>Account Profile</MDBListGroupItem>
+        <MDBListGroupItem href="childprof" hover>Child Profile</MDBListGroupItem>
+        <MDBListGroupItem href="manageaddress" hover>Manage Address</MDBListGroupItem>
+    </MDBListGroup>
+
+    </div>
+</div>
+<div className="card" >
+       <div className="card-body">
+            <h4 className="card-title">
+                <Link to="/myorder" style={{color:"blue"}}> Payment Details </Link> 
+            </h4> 
+        </div> 
+    </div>
+</div>
+
+
+{/*<MDBCol style={{marginLeft:"22px"}}>
+      <MDBCard style={{ width: "22rem",down:"100px" }}>
        
         <MDBCardBody>
           <MDBCardTitle >
@@ -22,6 +53,7 @@ export default class Mydetails extends Component{
           </MDBCardTitle>
         </MDBCardBody>
       </MDBCard>
+      
       <MDBCard style={{ width: "22rem" }}>
        
         <MDBCardBody>
@@ -53,9 +85,31 @@ export default class Mydetails extends Component{
         
       </MDBCard>
 
-    </MDBCol>
+    </MDBCol>                  
+
+   {/* <div className="container-fluid">
     
+        
+
+            <div className="card" style={{}}>
+                <div className="card-body">
+                   
+                   
+                    <Link  to="/Profile" className="card-link"> Profile</Link><br/><br/>
+                    <Link  to="/childprof" className="card-link"> Child Profile</Link><br/><br/>
+                    <Link  to="/manageaddress" className="card-link"> Manage Address</Link>
+
+                    
+                </div>
+            </div>
+
+        </div>*/}
+       
+   
 </div>
+
+    
+
                    
                    
                    
